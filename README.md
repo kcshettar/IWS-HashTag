@@ -7,7 +7,7 @@
 2. Kiran Shettar (Plunker URL: https://plnkr.co/users/kcshettar)
 3. 
 4. 
-### Project Details:
+## Project Details:
 - AWS Instance running at: http://34.227.185.68 or http://ws1dev.ddns.net
 - AWS Elastic Beanstalk (Web Application)
     - [Web Application - Click Here (v.1.0.1)](http://iwswebapplication-dev.us-west-2.elasticbeanstalk.com/)
