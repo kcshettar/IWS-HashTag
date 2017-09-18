@@ -1,8 +1,13 @@
 # IWS-ProjectApplication
 **Matching skillsets for JobSearch using openSource API's**
-
-
-## Project Details:
+## Team Name : 
+**Yet To be Decided**
+### Team Members :
+1. Derek Campaniello (Plunker URL: https://plnkr.co/Sf6WBhTw3PxXdV4enlDf)
+2. Kiran Shettar (Plunker URL: https://plnkr.co/users/kcshettar)
+3. 
+4. 
+### Project Details:
 - AWS Instance running at: http://34.227.185.68 or http://ws1dev.ddns.net
 - AWS Elastic Beanstalk (Web Application)
     - [Web Application - Click Here (v.1.0.1)](http://iwswebapplication-dev.us-west-2.elasticbeanstalk.com/)
@@ -19,10 +24,4 @@
 - [Visual Studio IDE](https://www.visualstudio.com/vs/)
 - [Node.js Command Promt for Publishing](https://docs.npmjs.com/getting-started/installing-node)
 - [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)
-- [YouTube Video - Publishing](https://www.youtube.com/watch?v=7TERFQ_U9W0) 
-## Team Name : Yet To be Decided
-### Team Members :
-1. Derek Campaniello (Plunker URL: https://plnkr.co/Sf6WBhTw3PxXdV4enlDf)
-2. Kiran Shettar (Plunker URL: https://plnkr.co/users/kcshettar)
-3. 
-4. 
+- [YouTube Video - Publishing](https://www.youtube.com/watch?v=7TERFQ_U9W0)
