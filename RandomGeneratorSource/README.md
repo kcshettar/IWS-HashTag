@@ -1,10 +1,12 @@
 # IWS-ProjectApplication
 **Matching skillsets for JobSearch using openSource API's**
-## Random Job Posting Generator
+## Random Job Posting Generator:
+
 This API source code is part of https://randomapi.com/ API engine. This theoretical
 API will generate random job postings in a JSON format.
 
-Sample output:
+'''
+## Sample output:
 {
   "results": [
     {
@@ -31,3 +33,4 @@ Sample output:
     }
   ]
 }
+''
