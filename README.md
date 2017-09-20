@@ -14,7 +14,7 @@ Team Hashtag (Team #)
     - Environment Name - IWSWebApplication-dev
     - Deployment Package - Amazon S3
     - Platform - 64bit Windows Server 2016 v1.2.0 running IIS 10.0
-    - This is ASP.NET Core ~~1.0~~ v2.0 web application
+    - This is ASP.NET Core ~~v1.0~~ v2.0 web application (Model-View-Controller)
     - Single Instance (Instance type: t2.micro)
     - Key pair: iws-key 
     - Target - .NET runtime: 4.0 
