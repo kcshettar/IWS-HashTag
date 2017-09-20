@@ -5,8 +5,9 @@
 This API source code is part of https://randomapi.com/ API engine. This theoretical
 API will generate random job postings in a JSON format.
 
-'''
+
 ## Sample output:
+```
 {
   "results": [
     {
@@ -33,4 +34,4 @@ API will generate random job postings in a JSON format.
     }
   ]
 }
-''
+```
