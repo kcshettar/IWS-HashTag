@@ -2,7 +2,6 @@
 //
 // Documentation: https://randomapi.com/documentation
 
-
 var skills   = ['HTML', 'PHP', 'C', 'C#', 'CSS', 'VB', 'C++', 'Javascript', 'Java', 'Algorithms','Analytics','Android',
 'Applications','Blogging','Business','Business Analysis','Business Intelligence','Business Storytelling','Coaching',
 'Cloud Computing','Communication','Computer','Consulting','Content','Content Management','Content Marketing','Content Strategy',
@@ -46,8 +45,9 @@ else
     api.zip      = faker.address.zipCode("#####");
 }
 
+api.contact  = faker.name.firstName() + " " + faker.name.lastName();
+api.email    = api.contact.replace(" ",".") + "@" + 'jobmatch.net'
 api.url      = faker.internet.url();
-api.email    = faker.internet.email();
 api.phone    = faker.phone.phoneNumber("(800) ###-####") || faker.phone.phoneNumber("(855) ###-####")
 api.title    = list(['Software Engineer', 'Linux Administrator', 'Back End Developer', 'Front End Developer', 'QA Software Engineer', 'Manager', 'Senior Software Engineer', 'UI Developer', 'Designer', 'Technical Marketing','DB Engineer']);
 api.skills = [];
