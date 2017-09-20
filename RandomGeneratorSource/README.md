@@ -9,29 +9,20 @@ API will generate random job postings in a JSON format.
 ## Sample output:
 ```
 {
-  "results": [
-    {
-      "postid": "14796255",
-      "company": "Ziemann, Hettinger and Bernier",
-      "address": "927 Romaguera Brooks",
-      "city": "Crooksmouth",
-      "state": "Alaska",
-      "zip": "86738",
-      "url": "http://curt.name",
-      "phone": "(800) 074-3111",
-      "title": "Designer",
-      "skills": [
-        "Data Mining",
-        "Algorithms",
-        "Economics",
-        "Data Analytics",
-        "Hiring",
-        "Research",
-        "Information Management",
-        "Database Administration",
-        "HTML"
-      ]
-    }
+  "postid": "30898182",
+  "company": "Nicolas Group",
+  "address": "7135 Hodkiewicz Island",
+  "city": "West Gladycefort",
+  "state": "New Mexico",
+  "zip": "15616",
+  "url": "http://cedrick.net",
+  "email": "Helene.Koss@yahoo.com",
+  "phone": "(800) 197-2261",
+  "title": "Linux Administrator",
+  "skills": [
+    "Data Analytics",
+    "Web Development",
+    "Content"
   ]
 }
 ```

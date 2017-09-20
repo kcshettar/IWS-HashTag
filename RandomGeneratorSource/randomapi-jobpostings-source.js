@@ -47,6 +47,7 @@ else
 }
 
 api.url      = faker.internet.url();
+api.email    = faker.internet.email();
 api.phone    = faker.phone.phoneNumber("(800) ###-####") || faker.phone.phoneNumber("(855) ###-####")
 api.title    = list(['Software Engineer', 'Linux Administrator', 'Back End Developer', 'Front End Developer', 'QA Software Engineer', 'Manager', 'Senior Software Engineer', 'UI Developer', 'Designer', 'Technical Marketing','DB Engineer']);
 api.skills = [];
