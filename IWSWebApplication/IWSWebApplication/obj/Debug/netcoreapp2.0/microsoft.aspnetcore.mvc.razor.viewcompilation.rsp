@@ -4,7 +4,8 @@ C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplica
 --content-root=C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication
 --file=C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\Views\Home\About.cshtml
 --file=C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\Views\Home\Contact.cshtml
---file=C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\Views\Home\Index.cshtml
+--file=C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\Views\Home\Mainpage.cshtml
+--file=C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\Views\Home\Welcome.cshtml
 --file=C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\Views\Shared\Error.cshtml
 --file=C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\Views\Shared\_Layout.cshtml
 --file=C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\Views\Shared\_ValidationScriptsPartial.cshtml

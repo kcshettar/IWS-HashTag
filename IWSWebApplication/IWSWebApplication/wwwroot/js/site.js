@@ -29,4 +29,8 @@ function checkForm(form) {
     return true;
 }
 
-
+function pageReload() {
+    location.reload();
+    document.getElementById('username').value = '';
+    document.getElementById('password').value = '';
+}

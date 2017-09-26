@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "1da3a38e18289172949c2dd8725fa1808191d6b2"
+    "signature": "eccbc151b67d1bc87f9b4f70ce8a776b5315230d"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
       "IWSWebApplication/1.0.0": {
         "dependencies": {
           "AD.System.Web.Helpers.dll": "2.0.0",
+          "AWSSDK.Core": "3.3.17.10",
           "AecFramework.Web.Security": "2.0.4",
           "BundlerMiddleware.System.Web": "0.4.0",
           "Microsoft.AspNetCore.All": "2.0.0",
@@ -63,6 +64,21 @@
         },
         "compile": {
           "lib/Antlr3.Runtime.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.17.10": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0",
+          "System.Net.Requests": "4.0.11",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Security.Cryptography.Csp": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
         }
       },
       "BundlerMiddleware/0.4.0": {
@@ -3353,6 +3369,33 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
+      "System.Net.Requests/4.0.11": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Net.WebHeaderCollection": "4.0.1",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtime/unix/lib/_._": {
+            "rid": "unix",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
       "System.Net.Security/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -3403,6 +3446,14 @@
           "System.Net.Primitives": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Net.WebHeaderCollection/4.0.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0"
         }
       },
       "System.Numerics.Vectors/4.4.0": {},
@@ -4312,6 +4363,13 @@
       "sha512": "sha512-c1S+HBE+KYA5EBxtn25LEK02hHPH/tDQ6RviUTTCJpZIPoputtn8ArsQJy9lVJWZOnw37ufByO2Fmf1M8wpr8Q==",
       "path": "antlr/3.4.1.9004",
       "hashPath": "antlr.3.4.1.9004.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.3.17.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GzVqi+KS6KcGy34J38EZO2gWcAm0GPrN/2vAp5PrqNBnQcjB2bGcVS/PhINOQVsi5kLaJI2L+VY4M3Hf6E8GkA==",
+      "path": "awssdk.core/3.3.17.10",
+      "hashPath": "awssdk.core.3.3.17.10.nupkg.sha512"
     },
     "BundlerMiddleware/0.4.0": {
       "type": "package",
@@ -6084,6 +6142,13 @@
       "path": "system.net.primitives/4.3.0",
       "hashPath": "system.net.primitives.4.3.0.nupkg.sha512"
     },
+    "System.Net.Requests/4.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vxGt7C0cZixN+VqoSW4Yakc1Y9WknmxauDqzxgpw/FnBdz4kQNN51l4wxdXX5VY1xjqy//+G+4CvJWp1+f+y6Q==",
+      "path": "system.net.requests/4.0.11",
+      "hashPath": "system.net.requests.4.0.11.nupkg.sha512"
+    },
     "System.Net.Security/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -6097,6 +6162,13 @@
       "sha512": "sha512-+/JXp318eqgdlYMgMNvasvBu0EyD7TFAVkKFSpBMi0Webj2rJL5qwyxRmz2qiEUPMSNdzIMPhIMc+vBfGC1L/g==",
       "path": "system.net.sockets/4.3.0",
       "hashPath": "system.net.sockets.4.3.0.nupkg.sha512"
+    },
+    "System.Net.WebHeaderCollection/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XX2TIAN+wBSAIV51BU2FvvXMdstUa8b0FBSZmDWjZdwUMmggQSifpTOZ5fNH20z9ZCg2fkV1L5SsZnpO2RQDRQ==",
+      "path": "system.net.webheadercollection/4.0.1",
+      "hashPath": "system.net.webheadercollection.4.0.1.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.4.0": {
       "type": "package",
