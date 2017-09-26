@@ -4,22 +4,33 @@
     <meta charset="utf-8" />
     <title>HashTag</title>
     <script type="text/javascript" src="js/site.js"></script>
-    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
 </head>
-<body BGCOLOR="DCDCDC">
-    <div class="maindiv-header">
-        <header>
-            <h1>Internet and Web Systems - 1 (Project)</h1>
-        </header>
-    </div>
+<body>
+    <form class="modal-content" action="/Home/Welcome">
+        <div class="imgcontainer">
+            <img src="/images/Login.JPG" alt="Login Image" class="profile">
+            <div class="middle">
+                <div class="text">ADMIN</div>
+            </div>
+        </div>
 
-    <div class="maindiv">
-        <br />
-        <button onClick="AcceptUserInput()" id="gitHublink" class="button button3">GitHub</button><br>
-        <address><b>Address:<br>1 University Ave<br>University of Massachusetts<br>Lowell, MA, USA - 01851</b><br></address>
-        <symbol>&#9742</symbol> <a href="tel:1-123-456-7890">1-123-456-7890</a><br />
-        <symbol>&#9993</symbol> <a href="mailto:Alessandro_Agnello@uml.edu?Subject=UML%20IWS%20Query%20Fall2017">Send an e-Mail to Alex</a>
-        <br /><br />
-    </div>
+        <div class="container" style="width: 100%">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="passwd" id="password" required>
+            <br><br>
+            <button type="submit">Login</button><br><br>
+            <input type="checkbox" checked="checked"> Remember me
+            
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1; width: 100%">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
 </body>
 </html>

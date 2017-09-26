@@ -8,3 +8,4 @@ C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplica
 C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.AssemblyInfo.cs
 C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.dll
 C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.pdb
+C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.csprojResolveAssemblyReference.cache
