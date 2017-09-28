@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
+using MongoDB.Bson;
 using Microsoft.Extensions.Options;
 using IWSWebApplication.Models;
 using static IWSWebApplication.Startup;
-using static IWSWebApplication.Startup.MongoContext;
 
 namespace IWSWebApplication.Controllers
 {
@@ -43,15 +43,37 @@ namespace IWSWebApplication.Controllers
         // POST: Users/Register
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(IFormCollection collection)
+        public ActionResult Register(IFormCollection formData, Users usermodel)
         {
             try
-            { 
+            {
+              
 
-                return RedirectToAction(nameof(Index));
+                    // Get Collection from DB
+                    var collection = _dbcontext._database.GetCollection<BsonDocument>("Users");
+                     var builder = Builders<BsonDocument>.Filter;
+                     var filter = builder.Eq("Username", usermodel.Username) | builder.Eq("Email", usermodel.Email);
+                     var count = collection.Count(filter);
+
+                     ViewData["Message"] = count;
+
+
+                     if (count == 0)
+                     {
+                         var document = usermodel.ToBsonDocument();
+                         collection.InsertOne(document);
+                         return RedirectToAction(nameof(Index));
+                     }
+                     else
+                     {
+                         ViewData["Message"] = "Username or Email already exists.";
+                         return View();
+                     }
+
             }
             catch
             {
+                ViewData["Message"] = "Error";
                 return View();
             }
         }
@@ -69,7 +91,7 @@ namespace IWSWebApplication.Controllers
         {
             try
             {
-                var document = 
+                
 
                 return RedirectToAction(nameof(Index));
             }

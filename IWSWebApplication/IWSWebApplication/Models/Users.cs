@@ -11,17 +11,17 @@ namespace IWSWebApplication.Models
     {
         [BsonId]
         public string Id { get; set; }
-        [BsonRequired]
+        [BsonElement]
         public string FirstName { get; set; }
-        [BsonRequired]
+        [BsonElement]
         public string LastName { get; set; }
-        [BsonRequired]
+        [BsonElement]
         public string ZipCode { get; set; }
-        [BsonRequired]
+        [BsonElement]
         public string Email { get; set; }
-        [BsonRequired]
+        [BsonElement]
         public string Username { get; set; }
-        [BsonRequired]
+        [BsonElement]
         public string Password { get; set; }
     }
 }
