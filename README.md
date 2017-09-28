@@ -5,7 +5,7 @@ Team Hashtag (Team #)
 ### Team Members :
 1. Derek Campaniello (Plunker URL: https://plnkr.co/Sf6WBhTw3PxXdV4enlDf)
 2. Kiran Shettar (Plunker URL: https://plnkr.co/users/kcshettar)
-3. Dipika Boro (Plunker URL: https://run.plnkr.co/BnlIehSgqiEIWZHe/)
+3. Dipika Boro (Plunker URL: https://plnkr.co/users/dipikaboro)
 4. Anuroop Rao (Plunker URL: https://plnkr.co/users/Anuroopg)
 ## Project Details:
 - AWS Instance running at: http://34.227.185.68 or http://ws1dev.ddns.net
