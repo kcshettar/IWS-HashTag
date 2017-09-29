@@ -13460,11 +13460,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\kcshe\\OneDrive\\Visual Studio 2017\\repos\\IWSWebApplication\\IWSWebApplication\\IWSWebApplication.csproj",
+      "projectUniqueName": "C:\\Users\\kcshe\\OneDrive\\Repository\\IWS-HashTag\\IWSWebApplication\\IWSWebApplication\\IWSWebApplication.csproj",
       "projectName": "IWSWebApplication",
-      "projectPath": "C:\\Users\\kcshe\\OneDrive\\Visual Studio 2017\\repos\\IWSWebApplication\\IWSWebApplication\\IWSWebApplication.csproj",
+      "projectPath": "C:\\Users\\kcshe\\OneDrive\\Repository\\IWS-HashTag\\IWSWebApplication\\IWSWebApplication\\IWSWebApplication.csproj",
       "packagesPath": "C:\\Users\\kcshe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kcshe\\OneDrive\\Visual Studio 2017\\repos\\IWSWebApplication\\IWSWebApplication\\obj\\",
+      "outputPath": "C:\\Users\\kcshe\\OneDrive\\Repository\\IWS-HashTag\\IWSWebApplication\\IWSWebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
