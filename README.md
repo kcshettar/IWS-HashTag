@@ -8,18 +8,19 @@ Team Hashtag (Team #)
 3. Dipika Boro (Plunker URL: https://plnkr.co/users/dipikaboro)
 4. Anuroop Rao (Plunker URL: https://plnkr.co/users/Anuroopg)
 ## Project Details:
-- AWS Instance running at: http://34.227.185.68 or http://ws1dev.ddns.net
+- ~~AWS Instance running at: http://34.227.185.68 or http://ws1dev.ddns.net~~
 - AWS Elastic Beanstalk (Web Application)
-    - [Web Application - Click Here (v.1.0.1)](http://iwswebapplication-dev.us-west-2.elasticbeanstalk.com/)
+    - [Web Application - Click Here (v1.0.4)](http://iwswebapplication-dev.us-west-2.elasticbeanstalk.com/)
     - Environment Name - IWSWebApplication-dev
+    - Deployment Package - Amazon S3
     - Platform - 64bit Windows Server 2016 v1.2.0 running IIS 10.0
-    - This is ASP.NET Core 1.0 web application
+    - This is ASP.NET Core ~~v1.0~~ v2.0 web application (Model-View-Controller)
     - Single Instance (Instance type: t2.micro)
     - Key pair: iws-key 
     - Target - .NET runtime: 4.0 
     - [AWS Management Console - Amazon Web Services](https://aws.amazon.com/console/)
         - *UserName: kshettar@cs.uml.edu*
-        - *Password: S******3*
+        - *Password: dev________S*
 ### References: 
 - [Visual Studio IDE](https://www.visualstudio.com/vs/)
 - [Node.js Command Promt for Publishing](https://docs.npmjs.com/getting-started/installing-node)
