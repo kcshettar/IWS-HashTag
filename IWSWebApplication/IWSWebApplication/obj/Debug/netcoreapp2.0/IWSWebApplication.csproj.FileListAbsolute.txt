@@ -9,3 +9,14 @@ C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplica
 C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.dll
 C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.pdb
 C:\Users\kcshe\OneDrive\Visual Studio 2017\repos\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.csprojResolveAssemblyReference.cache
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\bin\Debug\netcoreapp2.0\IWSWebApplication.deps.json
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\bin\Debug\netcoreapp2.0\IWSWebApplication.runtimeconfig.json
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\bin\Debug\netcoreapp2.0\IWSWebApplication.runtimeconfig.dev.json
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\bin\Debug\netcoreapp2.0\IWSWebApplication.dll
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\bin\Debug\netcoreapp2.0\IWSWebApplication.pdb
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.csprojResolveAssemblyReference.cache
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.csproj.CoreCompileInputs.cache
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.AssemblyInfoInputs.cache
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.AssemblyInfo.cs
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.dll
+C:\Users\kcshe\OneDrive\Repository\IWS-HashTag\IWSWebApplication\IWSWebApplication\obj\Debug\netcoreapp2.0\IWSWebApplication.pdb
