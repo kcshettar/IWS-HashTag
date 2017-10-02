@@ -1,7 +1,7 @@
 # IWS-ProjectApplication
 **Matching skillsets for JobSearch using openSource API's**
 ## Team Name : 
-Team Hashtag (Team #)
+Hashtag (Team #)
 ### Team Members :
 1. Derek Campaniello (Plunker URL: https://plnkr.co/Sf6WBhTw3PxXdV4enlDf)
 2. Kiran Shettar (Plunker URL: https://plnkr.co/users/kcshettar)

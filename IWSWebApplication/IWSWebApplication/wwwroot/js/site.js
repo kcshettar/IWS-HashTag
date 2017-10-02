@@ -1,7 +1,4 @@
 ﻿// Write your JavaScript code.
-function AcceptUserInput() {
-    location.href = "https://github.com/kcshettar/IWS-ProjectApplication";
-}
 
 // Get the modal
 var modal = document.getElementById('id01');
@@ -21,7 +18,6 @@ function checkForm(form) {
         window.open('index.html', "_self");
         
     }
-    
     else {
         alert("Invalid Username/Password");
         break;

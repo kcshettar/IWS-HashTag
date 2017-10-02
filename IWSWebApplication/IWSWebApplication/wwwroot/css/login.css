@@ -67,14 +67,14 @@ span.psw {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+    width: 40%; /* Could be more or less, depending on screen size */
     padding-bottom: 30px;
 }
 
 /* Default Code */
 body {
     /*padding-top: 0px;*/
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 /* Wrapping element */
