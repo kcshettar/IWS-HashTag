@@ -9,19 +9,12 @@ namespace IWSWebApplication.Models
 {
     public class Users
     {
-        [BsonId]
-        public string Id { get; set; }
-        [BsonElement]
+        [BsonRequired]
         public string FirstName { get; set; }
-        [BsonElement]
         public string LastName { get; set; }
-        [BsonElement]
         public string ZipCode { get; set; }
-        [BsonElement]
         public string Email { get; set; }
-        [BsonElement]
         public string Username { get; set; }
-        [BsonElement]
         public string Password { get; set; }
     }
 }

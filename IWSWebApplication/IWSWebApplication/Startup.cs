@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using IWSWebApplication.Models;
+using IWSWebApplication.Services;
 
 namespace IWSWebApplication
 {
@@ -25,13 +26,10 @@ namespace IWSWebApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            MongoDBService.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
+            MongoDBService.DatabaseName = Configuration.GetSection("MongoConnection:DatabaseName").Value;
 
-            services.Configure<Settings>(options =>
-            {
-                options.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
-                options.Database = Configuration.GetSection("MongoConnection:Database").Value;
-            });
+            services.AddMvc();
 
         }
 
@@ -67,22 +65,7 @@ namespace IWSWebApplication
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-        }
-
-        public class MongoContext
-        {
-            public IMongoClient _client;
-            public IMongoDatabase _database;
-
-            public MongoContext(IOptions<Settings> settings)
-            {
-                var client = new MongoClient(settings.Value.ConnectionString);
-                if (client != null)
-                    _database = client.GetDatabase(settings.Value.Database);
-
-            }
-
-        }    
+        }   
 
     }
 }

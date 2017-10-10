@@ -8,20 +8,12 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using Microsoft.Extensions.Options;
 using IWSWebApplication.Models;
-using static IWSWebApplication.Startup;
+using IWSWebApplication.Services;
 
 namespace IWSWebApplication.Controllers
 {
     public class UsersController : Controller
     {
-
-        MongoContext _dbcontext;
-
-        public UsersController(IOptions<Settings> settings)
-        {
-            _dbcontext = new MongoContext(settings);
-        }
-
         // GET: Users
         public ActionResult Index()
         {
@@ -47,33 +39,31 @@ namespace IWSWebApplication.Controllers
         {
             try
             {
-              
+                MongoDBService context = new MongoDBService();
 
-                    // Get Collection from DB
-                    var collection = _dbcontext._database.GetCollection<BsonDocument>("Users");
-                     var builder = Builders<BsonDocument>.Filter;
-                     var filter = builder.Eq("Username", usermodel.Username) | builder.Eq("Email", usermodel.Email);
-                     var count = collection.Count(filter);
+                var builder = Builders<Users>.Filter;
+                var filter = builder.Eq("Username", usermodel.Username) |
+                builder.Eq("Email", usermodel.Email);
+                var result = context.User.Find(filter);
 
-                     ViewData["Message"] = count;
+                var count = result.Count();
 
-
-                     if (count == 0)
-                     {
-                         var document = usermodel.ToBsonDocument();
-                         collection.InsertOne(document);
-                         return RedirectToAction(nameof(Index));
-                     }
-                     else
-                     {
-                         ViewData["Message"] = "Username or Email already exists.";
-                         return View();
-                     }
+                if (count == 0)
+                {
+                    context.User.InsertOne(usermodel);
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewData["Message"] = "Username or Email already exists!";
+                    return View();
+                }
 
             }
-            catch
+            catch (Exception ex)
             {
-                ViewData["Message"] = "Error";
+                //throw new Exception("Error: ", ex);
+                ViewData["Message"] = ex;
                 return View();
             }
         }
