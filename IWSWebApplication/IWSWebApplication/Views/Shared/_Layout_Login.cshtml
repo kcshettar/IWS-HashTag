@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    @*<title>@ViewData["Title"] - IWSWebApplication</title>*@
+    @*<title>@ViewData["Title"] - IWSWebApplication</title>*@    
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -29,17 +29,18 @@
                 <a asp-area="" asp-controller="Home" asp-action="Mainpage" class="navbar-brand">IWSWebApplication</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Mainpage">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Mainpage"><span class="glyphicon glyphicon-user"></span> Welcome</a></li>
-                    @*<li><a asp-area="" asp-controller="Login" asp-action="Index"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>*@
-                    <li><a asp-area="" asp-controller="/" asp-action=""><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-                </ul>
+                    <li><a data-toggle="modal" data-target="#signupModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                 </ul>
             </div>
+
+            @*<div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://localhost:3000/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="http://localhost:3000/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>*@
         </div>
     </nav>
     <div class="container body-content">
@@ -50,7 +51,7 @@
                 <p>&copy; 2017 - HashTag (#)</p>
             </footer>
         </nav>
-</div>
+    </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
