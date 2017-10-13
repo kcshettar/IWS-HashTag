@@ -7,20 +7,19 @@ using Microsoft.AspNetCore.Mvc;
 using IWSWebApplication.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System.Net.Mail;
+using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace IWSWebApplication.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Welcome()
-        {
-            ViewData["Message"] = "Your application Welcome page.";
-            return View();
-        }
-
         public IActionResult Mainpage()
         {
             ViewData["Message"] = "Your application Main page.";
+
             return View();
         }
 
@@ -47,8 +46,8 @@ namespace IWSWebApplication.Controllers
                 try
                 {
                     MailMessage message = new MailMessage();
-                    message.From = new MailAddress(client.Email, client.Name);//Email which you are getting
-                    message.To.Add("kcshettar@gmail.com");//Where mail will be sent from
+                    message.From = new MailAddress(client.Email, client.Name); //Email which you are getting
+                    message.To.Add("kcshettar@gmail.com"); //Where mail will be sent from
                     
                     message.Subject = client.Subject;
                     message.Body = "Email From (Name): " + client.Name + "\n\n" + "Email From: " + client.Email + "\n\n" + "Message: " + client.Message;
@@ -60,8 +59,9 @@ namespace IWSWebApplication.Controllers
                     smtp.Host = "smtp.gmail.com";
                     smtp.Port = 587;
 
+                    // Using to send e-mail
                     smtp.Credentials = new System.Net.NetworkCredential
-                    ("kcshettar@gmail.com", "<Password Goes Here>");
+                    ("kcshettar@gmail.com", "<>");
 
                     smtp.EnableSsl = true;
 

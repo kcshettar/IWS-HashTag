@@ -1,30 +1,14 @@
 ﻿@model IWSWebApplication.Models.ContactViewModel
 @{
     ViewData["Title"] = "Contact";
+    Layout = "_Layout";
 }
 
 <h2>@ViewData["Title"]</h2>
 @*<h3>@ViewData["Message"]</h3>*@
 
-@section Scripts
-    {
-    <script>
-        var maxchar = 160;
-        var i = document.getElementById("textinput");
-        var c = document.getElementById("count");
-        c.innerHTML = maxchar;
-
-        i.addEventListener("keydown", count);
-
-        function count(e) {
-            var len = i.value.length;
-            if (len >= maxchar) {
-                e.preventDefault();
-            } else {
-                c.innerHTML = maxchar - len - 1;
-            }
-        }
-    </script>
+@section Scripts {
+    <script type="text/javascript" src="~/js/site.js"></script>
 }
 
 <div>

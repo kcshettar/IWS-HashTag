@@ -1,12 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Mainpage";
+    Layout = "_Layout";
 }
-<h2>@ViewData["Title"]</h2>
+@*<h2>@ViewData["Title"]</h2>*@
 <h3>@ViewData["Message"]</h3>
 
-@section Scripts
-{
-    <script>
-        //Enter Javascript Code here
-    </script>
+@section Scripts {
+    <script type="text/javascript" src="~/js/site.js"></script>
 }
+
+<body>
+    <div class="container">
+        <div class="alert alert-success alert-dismissable">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <strong>Success!</strong> You've Logged In.
+        </div>
+    </div>
+</body>

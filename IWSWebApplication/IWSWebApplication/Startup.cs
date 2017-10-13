@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using System.Web.Mvc.Ajax;
 
 namespace IWSWebApplication
 {
@@ -21,7 +23,16 @@ namespace IWSWebApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApiContext>(opt => opt.UseInMemoryDatabase());
             services.AddMvc();
+            services.AddCors(options => options.AddPolicy("Cors",
+                builder =>
+                {
+                    builder
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,14 +58,14 @@ namespace IWSWebApplication
             //});
 
             //go ahead and use the root of folder 'index.html' file
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
-
+            //app.UseDefaultFiles(); //index.html
+            app.UseStaticFiles(); 
+            //app.UseCors("Cors");
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Login}/{action=Index}/{id?}");
             });
         }
     }
