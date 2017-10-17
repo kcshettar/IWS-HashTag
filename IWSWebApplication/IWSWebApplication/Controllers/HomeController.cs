@@ -61,7 +61,7 @@ namespace IWSWebApplication.Controllers
 
                     // Using to send e-mail
                     smtp.Credentials = new System.Net.NetworkCredential
-                    ("kcshettar@gmail.com", "<>");
+                    ("kcshettar@gmail.com", "sharavukiransharavu8264");
 
                     smtp.EnableSsl = true;
 

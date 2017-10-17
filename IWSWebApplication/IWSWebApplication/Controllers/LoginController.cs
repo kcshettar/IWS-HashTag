@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
+//More
 using System.Diagnostics;
 using IWSWebApplication.Models;
 using IWSWebApplication.Controllers;
@@ -29,29 +29,21 @@ namespace IWSWebApplication.Controllers
             return View();
         }
 
-        //StringBuilder userSignIn = new StringBuilder();
-        //public List<string> UserDetails = new List<string>();
-
         //[Route("~/Home/Mainpage")]
         [HttpPost]
         public IActionResult Index(LoginViewModel logger)
         {
             try
             {
-                //LoginViewModel loggerDetails = new LoginViewModel();
-
-                string data1 = logger.LoginEmail;
-                string data2 = logger.LoginPassword;
-                string data01 = logger.RegisterFirstName;
-                string data02 = logger.RegisterLastName;
-                string data03 = logger.RegisterEmail;
-                string data04 = logger.RegisterPassword;
-
-                //UserDetails.Add(logger.LoginEmail);
-                //userSignIn.Append(logger.LoginEmail);
+                //string LoginEmail = logger.LoginEmail;
+                //string LoginPassword = logger.LoginPassword;
+                //string RegisterFirstName = logger.RegisterFirstName;
+                //string RegisterLastName = logger.RegisterLastName;
+                //string RegisterEmail = logger.RegisterEmail;
+                //string RegisterPassword = logger.RegisterPassword;
 
                 //ModelState.Clear();
-                ViewBag.Message = "Thank you for Registering with us." + "\n" + "Go ahead and use the features.";
+                ViewBag.Message = "Thank you for Using our service." + "\n" + "Go ahead and use the features.";
             }
 
             catch (Exception ex)
@@ -59,14 +51,6 @@ namespace IWSWebApplication.Controllers
                 ModelState.Clear();
                 ViewBag.Message = $"Sorry we are facing Problem here {ex.Message}";
             }
-            //string userList = UserDetails.ToString()
-
-            return View();
-        }
-
-        public IActionResult Mainpage()
-        {
-            ViewData["Message"] = "Your application Main page.";
 
             return View();
         }
@@ -75,6 +59,5 @@ namespace IWSWebApplication.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
     }
 }

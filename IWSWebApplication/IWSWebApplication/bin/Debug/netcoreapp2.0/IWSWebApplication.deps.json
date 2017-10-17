@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "95edf2357633f0e7272107652208d0e9d4d43f03"
+    "signature": "a8adde8f98720037ece5930f96cdafeee4aa655f"
   },
   "compilationOptions": {
     "defines": [
@@ -24,8 +24,8 @@
       "IWSWebApplication/1.0.0": {
         "dependencies": {
           "AD.System.Web.Helpers.dll": "2.0.0",
-          "AWSSDK.Core": "3.3.17.10",
-          "AWSSDK.DynamoDBv2": "3.3.4.17",
+          "AWSSDK.Core": "3.3.18",
+          "AWSSDK.DynamoDBv2": "3.3.4.18",
           "AecFramework.Web.Security": "2.0.4",
           "BundlerMiddleware.System.Web": "0.4.0",
           "Microsoft.AspNetCore.All": "2.0.0",
@@ -71,7 +71,7 @@
           "lib/Antlr3.Runtime.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.17.10": {
+      "AWSSDK.Core/3.3.18": {
         "dependencies": {
           "Microsoft.CSharp": "4.4.0",
           "System.Net.Requests": "4.0.11",
@@ -86,9 +86,9 @@
           "lib/netstandard1.3/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.DynamoDBv2/3.3.4.17": {
+      "AWSSDK.DynamoDBv2/3.3.4.18": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.17.10"
+          "AWSSDK.Core": "3.3.18"
         },
         "runtime": {
           "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
@@ -4655,19 +4655,19 @@
       "path": "antlr/3.4.1.9004",
       "hashPath": "antlr.3.4.1.9004.nupkg.sha512"
     },
-    "AWSSDK.Core/3.3.17.10": {
+    "AWSSDK.Core/3.3.18": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GzVqi+KS6KcGy34J38EZO2gWcAm0GPrN/2vAp5PrqNBnQcjB2bGcVS/PhINOQVsi5kLaJI2L+VY4M3Hf6E8GkA==",
-      "path": "awssdk.core/3.3.17.10",
-      "hashPath": "awssdk.core.3.3.17.10.nupkg.sha512"
+      "sha512": "sha512-15VZyyB+94JPOBz50hRFx7axCZ1iLHyAJqkGMa3khEayMjEMx4LXEScWMazE1WsbWF1EtHtXi4KL7oOYzVd44w==",
+      "path": "awssdk.core/3.3.18",
+      "hashPath": "awssdk.core.3.3.18.nupkg.sha512"
     },
-    "AWSSDK.DynamoDBv2/3.3.4.17": {
+    "AWSSDK.DynamoDBv2/3.3.4.18": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jbo7TzR4/4XM4KaN6sdzOuNhWflx8TU1bW1te2Gp9u4/vDJlMcq6K5PFHR8kBA85I4y551R1it56NLOqynyTTQ==",
-      "path": "awssdk.dynamodbv2/3.3.4.17",
-      "hashPath": "awssdk.dynamodbv2.3.3.4.17.nupkg.sha512"
+      "sha512": "sha512-5aJQJou34QHgrvM/gOb3VAMSZ+D8FxYj6bMdZlaWBYlmz3zl6UooOY/EP855sHjpi9x3/VHXFY3tiEnkrPGv2Q==",
+      "path": "awssdk.dynamodbv2/3.3.4.18",
+      "hashPath": "awssdk.dynamodbv2.3.3.4.18.nupkg.sha512"
     },
     "BundlerMiddleware/0.4.0": {
       "type": "package",

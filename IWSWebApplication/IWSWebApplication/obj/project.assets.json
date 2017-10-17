@@ -29,7 +29,7 @@
           "lib/Antlr3.Runtime.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.17.10": {
+      "AWSSDK.Core/3.3.18": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -45,10 +45,10 @@
           "lib/netstandard1.3/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.DynamoDBv2/3.3.4.17": {
+      "AWSSDK.DynamoDBv2/3.3.4.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.17, 3.4.0)"
+          "AWSSDK.Core": "[3.3.18, 3.4.0)"
         },
         "compile": {
           "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
@@ -5504,12 +5504,12 @@
         "lib/Antlr3.Runtime.pdb"
       ]
     },
-    "AWSSDK.Core/3.3.17.10": {
-      "sha512": "GzVqi+KS6KcGy34J38EZO2gWcAm0GPrN/2vAp5PrqNBnQcjB2bGcVS/PhINOQVsi5kLaJI2L+VY4M3Hf6E8GkA==",
+    "AWSSDK.Core/3.3.18": {
+      "sha512": "15VZyyB+94JPOBz50hRFx7axCZ1iLHyAJqkGMa3khEayMjEMx4LXEScWMazE1WsbWF1EtHtXi4KL7oOYzVd44w==",
       "type": "package",
-      "path": "awssdk.core/3.3.17.10",
+      "path": "awssdk.core/3.3.18",
       "files": [
-        "awssdk.core.3.3.17.10.nupkg.sha512",
+        "awssdk.core.3.3.18.nupkg.sha512",
         "awssdk.core.nuspec",
         "lib/MonoAndroid10/AWSSDK.Core.XML",
         "lib/MonoAndroid10/AWSSDK.Core.dll",
@@ -5547,13 +5547,13 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.DynamoDBv2/3.3.4.17": {
-      "sha512": "jbo7TzR4/4XM4KaN6sdzOuNhWflx8TU1bW1te2Gp9u4/vDJlMcq6K5PFHR8kBA85I4y551R1it56NLOqynyTTQ==",
+    "AWSSDK.DynamoDBv2/3.3.4.18": {
+      "sha512": "5aJQJou34QHgrvM/gOb3VAMSZ+D8FxYj6bMdZlaWBYlmz3zl6UooOY/EP855sHjpi9x3/VHXFY3tiEnkrPGv2Q==",
       "type": "package",
-      "path": "awssdk.dynamodbv2/3.3.4.17",
+      "path": "awssdk.dynamodbv2/3.3.4.18",
       "files": [
         "analyzers/dotnet/cs/AWSSDK.DynamoDBv2.CodeAnalysis.dll",
-        "awssdk.dynamodbv2.3.3.4.17.nupkg.sha512",
+        "awssdk.dynamodbv2.3.3.4.18.nupkg.sha512",
         "awssdk.dynamodbv2.nuspec",
         "lib/MonoAndroid10/AWSSDK.DynamoDBv2.XML",
         "lib/MonoAndroid10/AWSSDK.DynamoDBv2.dll",
@@ -14103,8 +14103,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "AD.System.Web.Helpers.dll >= 2.0.0",
-      "AWSSDK.Core >= 3.3.17.10",
-      "AWSSDK.DynamoDBv2 >= 3.3.4.17",
+      "AWSSDK.Core >= 3.3.18",
+      "AWSSDK.DynamoDBv2 >= 3.3.4.18",
       "AecFramework.Web.Security >= 2.0.4",
       "BundlerMiddleware.System.Web >= 0.4.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
@@ -14121,26 +14121,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KCS\\.nuget\\packages\\": {},
+    "C:\\Users\\kcshe\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\KCS\\OneDrive\\Visual Studio 2017\\repos\\IWSWebApplication\\IWSWebApplication\\IWSWebApplication.csproj",
+      "projectUniqueName": "C:\\Users\\kcshe\\OneDrive\\Visual Studio 2017\\repos\\IWSWebApplication\\IWSWebApplication\\IWSWebApplication.csproj",
       "projectName": "IWSWebApplication",
-      "projectPath": "C:\\Users\\KCS\\OneDrive\\Visual Studio 2017\\repos\\IWSWebApplication\\IWSWebApplication\\IWSWebApplication.csproj",
-      "packagesPath": "C:\\Users\\KCS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KCS\\OneDrive\\Visual Studio 2017\\repos\\IWSWebApplication\\IWSWebApplication\\obj\\",
+      "projectPath": "C:\\Users\\kcshe\\OneDrive\\Visual Studio 2017\\repos\\IWSWebApplication\\IWSWebApplication\\IWSWebApplication.csproj",
+      "packagesPath": "C:\\Users\\kcshe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kcshe\\OneDrive\\Visual Studio 2017\\repos\\IWSWebApplication\\IWSWebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\KCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kcshe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -14164,70 +14161,70 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "AWSSDK.Core": {
-            "target": "Package",
-            "version": "3.3.17.10"
-          },
-          "System.IdentityModel.Tokens.Jwt": {
-            "target": "Package",
-            "version": "5.1.4"
-          },
-          "AecFramework.Web.Security": {
-            "target": "Package",
-            "version": "2.0.4"
-          },
-          "System.Web.Optimization.Less": {
-            "target": "Package",
-            "version": "1.3.4"
-          },
-          "MongoLab.AspNet.Identity": {
-            "target": "Package",
-            "version": "1.0.3"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
-          "BundlerMiddleware.System.Web": {
-            "target": "Package",
-            "version": "0.4.0"
-          },
-          "System.Web.Mvc.Extensions": {
-            "target": "Package",
-            "version": "1.1.1.2"
-          },
-          "System.Web.Providers.Core": {
-            "target": "Package",
-            "version": "1.1.0"
-          },
-          "Microsoft.Owin.Host.SystemWeb": {
-            "target": "Package",
-            "version": "3.1.0"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
           },
+          "AD.System.Web.Helpers.dll": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "AecFramework.Web.Security": {
+            "target": "Package",
+            "version": "2.0.4"
+          },
+          "AWSSDK.Core": {
+            "target": "Package",
+            "version": "3.3.18"
+          },
           "AWSSDK.DynamoDBv2": {
             "target": "Package",
-            "version": "3.3.4.17"
+            "version": "3.3.4.18"
+          },
+          "BundlerMiddleware.System.Web": {
+            "target": "Package",
+            "version": "0.4.0"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
           },
-          "System.Web.Providers.SqlCE": {
+          "Microsoft.Owin.Host.SystemWeb": {
             "target": "Package",
-            "version": "1.1.0"
+            "version": "3.1.0"
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "MongoLab.AspNet.Identity": {
+            "target": "Package",
+            "version": "1.0.3"
           },
           "squire.web.security": {
             "target": "Package",
             "version": "0.2.0"
           },
-          "AD.System.Web.Helpers.dll": {
+          "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "5.1.4"
+          },
+          "System.Web.Mvc.Extensions": {
+            "target": "Package",
+            "version": "1.1.1.2"
+          },
+          "System.Web.Optimization.Less": {
+            "target": "Package",
+            "version": "1.3.4"
+          },
+          "System.Web.Providers.Core": {
+            "target": "Package",
+            "version": "1.1.0"
+          },
+          "System.Web.Providers.SqlCE": {
+            "target": "Package",
+            "version": "1.1.0"
           }
         },
         "imports": [

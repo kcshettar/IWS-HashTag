@@ -10,7 +10,7 @@ Hashtag (Team #)
 ## Project Details:
 - ~~AWS Instance running at: http://34.227.185.68 or http://ws1dev.ddns.net~~
 - AWS Elastic Beanstalk (Web Application)
-    - [Web Application - Click Here (v1.0.4)](http://iwswebapplication-dev.us-west-2.elasticbeanstalk.com/)
+    - [Web Application - Click Here (v1.0.7)](http://iwswebapplication-dev.us-west-2.elasticbeanstalk.com/)
     - Environment Name - IWSWebApplication-dev
     - Deployment Package - Amazon S3
     - Platform - 64bit Windows Server 2016 v1.2.0 running IIS 10.0

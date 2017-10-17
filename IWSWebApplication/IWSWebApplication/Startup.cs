@@ -23,16 +23,16 @@ namespace IWSWebApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApiContext>(opt => opt.UseInMemoryDatabase());
+            //services.AddDbContext<ApiContext>(opt => opt.UseInMemoryDatabase());
             services.AddMvc();
-            services.AddCors(options => options.AddPolicy("Cors",
-                builder =>
-                {
-                    builder
-                    .AllowAnyOrigin()
-                    .AllowAnyMethod()
-                    .AllowAnyHeader();
-                }));
+            //services.AddCors(options => options.AddPolicy("Cors",
+            //    builder =>
+            //    {
+            //        builder
+            //        .AllowAnyOrigin()
+            //        .AllowAnyMethod()
+            //        .AllowAnyHeader();
+            //    }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,8 +48,6 @@ namespace IWSWebApplication
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            //app.UseStaticFiles();
-
             //app.UseMvc(routes =>
             //{
             //    routes.MapRoute(
@@ -59,7 +57,7 @@ namespace IWSWebApplication
 
             //go ahead and use the root of folder 'index.html' file
             //app.UseDefaultFiles(); //index.html
-            app.UseStaticFiles(); 
+            app.UseStaticFiles();
             //app.UseCors("Cors");
             app.UseMvc(routes =>
             {
