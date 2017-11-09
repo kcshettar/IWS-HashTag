@@ -20,7 +20,7 @@ namespace ConsoleAppMlab
 
         static async Task CallMain(string[] args)
         {
-            string connectionString = "mongodb://kshettar:Skiran*3@ds249325.mlab.com:49325/users";
+            string connectionString = "mongodb://<Username>:<Password>@ds249325.mlab.com:49325/users";
             var mongoClient = new MongoClient(connectionString);
             var db = mongoClient.GetDatabase("users");
             //string output = mongo.Client.WithReadConcern ;
