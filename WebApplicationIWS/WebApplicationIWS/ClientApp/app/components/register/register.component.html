@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <label>FirstName</label><br>
+        <input style="width:350px" placeholder="Enter Here" [ngClass]="{'error': isValid('firstName')}" formControlName="firstName" required /><br>
+        <label>LastName</label><br>
+        <input style="width:350px" placeholder="Enter LastName" [ngClass]="{'error': isValid('lastName')}" formControlName="lastName" required /><br>
+        <label>E-Mail</label><br>
+        <input style="width:350px" type="email" placeholder="Enter Here" [ngClass]="{'error': isValid('eMail')}" formControlName="eMail" required /><br>
+        <label>Password</label><br>
+        <input style="width:350px" type="password" placeholder="Enter Here" [ngClass]="{'error': isValid('userPassword')}" formControlName="userPassword" required /><br>
+        <label>Re Enter Password</label><br>
+        <input style="width:350px" type="password" placeholder="Re Enter Here" [ngClass]="{'error': isValid('reuserPassword')}" formControlName="reuserPassword" required /><br>
+        <span *ngIf="form.errors?.mismatchFields">Passwords do not match</span><br>
+        <button>Register</button>
+    </form>
+</body>
+</html>

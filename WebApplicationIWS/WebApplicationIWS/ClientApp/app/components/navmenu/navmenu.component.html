@@ -6,6 +6,8 @@
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
             </button>
             <a class='navbar-brand' [routerLink]="['/home']">WebApplicationIWS</a>
         </div>
@@ -25,6 +27,19 @@
                 <li [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/fetch-data']">
                         <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/register-user']">
+                        <span class='glyphicon glyphicon-user'></span> Register
+                    </a>
+                </li>
+                <li *ngIf="auth.isAuthenticated"> <a [routerLink]="['/register-user']">Hello {{auth.name}} </a></li>
+                <li *ngIf="auth.isAuthenticated" (click)="auth.logout()"> <a [routerLink]="['/register-user']">Log-Out</a></li>
+                <!--*ngIf="auth.isAuthenticated"-->
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/']">
+                        <span class='glyphicon glyphicon-user'></span> Welcome {{auth.name}}
                     </a>
                 </li>
             </ul>
