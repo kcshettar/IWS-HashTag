@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <br>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()"  #formDir="ngForm">
+        <label for="firstName">FirstName</label><br>
+        <input id="firstName" class="form-control" style="width:500px" placeholder="Enter FirstName" [ngClass]="{'error': isValid('firstName')}" formControlName="firstName" required />
+        <div *ngIf="isValid('firstName')" class="alert alert-danger" style="width:500px">
+            First Name should be atleast 2-15 characters
+        </div>
+        <br>
+        <label for="lastName">LastName</label><br>
+        <input id="lastName" class="form-control" style="width:500px" placeholder="Enter LastName" [ngClass]="{'error': isValid('lastName')}" formControlName="lastName" required />
+        <div *ngIf="isValid('lastName')" class="alert alert-danger" style="width:500px">
+            Last Name should be atleast 2-15 characters
+        </div>
+        <br>
+        <label for="eMail">E-Mail</label><br>
+        <input id="eMail" class="form-control" style="width:500px" type="email" placeholder="Email Address" [ngClass]="{'error': isValid('eMail')}" formControlName="eMail" required />
+        <div *ngIf="isValid('eMail')" class="alert alert-danger" style="width:500px">
+            Enter a valid e-mail
+        </div>
+        <br>
+        <label for="phone">Phone</label><br>
+        <input id="phone" class="form-control" style="width:500px" type="tel" placeholder="Phone: XXX-XXX-XXXX" [ngClass]="{'error': isValid('phone')}" formControlName="phone" required />
+        <div *ngIf="isValid('phone')" class="alert alert-danger" style="width:500px">
+            Phone Format : XXX-XXX-XXXX
+        </div>
+        <br>
+        <label for="jobId">Job ID</label><br>
+        <input id="jobId" class="form-control" style="width:500px" type="text" placeholder="Type/Paste Job ID" [ngClass]="{'error': isValid('jobId')}" formControlName="jobId" required />
+        <div *ngIf="isValid('jobId')" class="alert alert-danger" style="width:500px">
+            Job ID should be 24 characters
+        </div>
+        <br>
+        <label for="linkedIn">LinkedIn</label><br>
+        <input id="linkedIn" class="form-control" style="width:500px" type="url" placeholder="Enter URL" [ngClass]="{'error': isValid('linkedIn')}" formControlName="linkedIn" required />
+        <div *ngIf="isValid('linkedIn')" class="alert alert-danger" style="width:500px">
+            Enter a valid URL
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-default" [disabled]="form.invalid" onclick="">Submit</button>
+        <button type="reset" class="btn btn-default">Reset</button>
+    </form>
+</body>
+</html>

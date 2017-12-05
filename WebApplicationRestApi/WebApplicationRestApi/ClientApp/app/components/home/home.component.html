@@ -1,0 +1,27 @@
+<!--<p *ngIf="!jobroles"><em>Loading...</em></p>-->
+<br> 
+    <div class="alert alert-danger alert-dismissable fade in" style="width: 30%; align-items:center" >
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Sorry!</strong> The following jobs have expired.
+    </div>
+<table class='table' *ngIf="jobroles">
+    <thead>
+        <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Location</th>
+            <th>Date Expired</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--<tr *ngFor="let jobrole of jobroles | slice:1:10">-->
+        <tr *ngFor="let jobrole of jobroles">
+            <td>{{ jobrole.companyname }}</td>
+            <td>{{ jobrole.jobrole }}</td>
+            <td>{{ jobrole.joblocation }}</td>
+            <td>{{ jobrole.jobdate }}</td>
+            <td>Expired</td>
+        </tr>
+    </tbody>
+</table>
