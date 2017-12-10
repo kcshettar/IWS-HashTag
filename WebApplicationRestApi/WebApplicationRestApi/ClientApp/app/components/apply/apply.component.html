@@ -1,5 +1,6 @@
 ﻿<!--<p *ngIf="!jobroles"><em>Loading...</em></p>-->
 <br>
+<div class="container">
 <div class="alert alert-info alert-dismissable fade in">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>Jobs Available!</strong>
@@ -9,7 +10,58 @@
     <strong>Copy the job ID before you apply!</strong>
 </div>
 
-<div class="grid grid-pad">
+<div class="row">
+    <div class="col-lg-6" *ngFor="let jobrole of jobroles">
+        <div style="padding:20px; background-color:dimgrey">
+            <div style="text-align:left; color:coral">
+                <h4> Role : {{ jobrole.jobname }} </h4>
+            </div>
+            <div style="text-align:left; color:antiquewhite">
+                <h4> Skills required: {{ jobrole.jobcompany }}</h4>
+            </div>
+            <div style="text-align:left; color:antiquewhite">
+                <h4> Location: {{ jobrole.joblocation }}</h4>
+            </div>
+            <div style="text-align:left; color:antiquewhite">
+                <h4> Email : {{ jobrole.jobemail }}</h4>
+            </div>
+            <div style="text-align:left; color:antiquewhite">
+                <h4> Company: {{ jobrole.jobskills }}</h4>
+            </div>
+            <div style="text-align:left; color:antiquewhite">
+                <h4> JobID: {{ jobrole.jobid }}</h4>
+            </div>
+            <div style="text-align: center">
+                <button type="button" class="btn btn-info btn-default" data-toggle="modal" data-target="#myModal">Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">JobMatch</h4>
+                </div>
+                <div class="modal-body" style="text-align: center">
+                    <h3>Redirect to Submit Page?</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="location.href = '/form-submit'">Yes</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<!--<div class="grid grid-pad">
     <div *ngFor="let jobrole of jobroles" class="col-1-4">
         <div class="module hero" style="text-align: left">
             <h4><strong>Role: </strong>{{jobrole.jobname}}</h4>
@@ -22,11 +74,10 @@
             <div style="text-align: center">
                 <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Apply</button>
             </div>
-            <!-- Modal -->
+
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
 
-                    <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -45,7 +96,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
