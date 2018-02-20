@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WebApplicationRestApi",
+    "\\WebApplicationRestApi\\ClientApp",
+    "\\WebApplicationRestApi\\ClientApp\\app",
+    "\\WebApplicationRestApi\\ClientApp\\app\\components",
+    "\\WebApplicationRestApi\\ClientApp\\app\\components\\counter",
+    "\\WebApplicationRestApi\\ClientApp\\app\\components\\fetchdata",
+    "\\WebApplicationRestApi\\Controllers",
+    "\\WebApplicationRestApi\\Model"
+  ],
+  "SelectedNode": "\\WebApplicationRestApi",
+  "PreviewInSolutionExplorer": false
+}

@@ -11,7 +11,7 @@ export class AuthService {
     BASE_URL = 'http://localhost:54446/api/auth';
     constructor(private http: Http, private router: Router) { }
     //NAME_KEY = 'name';
-    LOCAL_STORAGE = localStorage.getItem(name);
+    //LOCAL_STORAGE = localStorage.getItem(name);
 
     register(user) {
         delete user.reuserPassword;
@@ -22,8 +22,8 @@ export class AuthService {
 
                 if (!authResponse.token)
                     return;
-                localStorage.setItem('token', authResponse.token)
-                localStorage.setItem('name', authResponse.firstName)
+                //localStorage.setItem('token', authResponse.token)
+                //localStorage.setItem('name', authResponse.firstName)
 
                 this.router.navigate(['/']);
             });
